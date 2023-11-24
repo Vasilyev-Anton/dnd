@@ -1,0 +1,6 @@
+dist
+coverage
+doc
+webpack.*.js
+postcss.config.js
+.eslintrc.js

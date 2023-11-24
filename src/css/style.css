@@ -1,0 +1,84 @@
+*{
+  text-align: center;
+  font-family: "Charlie Display", sans-serif;
+  }
+  body {
+  position: relative;
+  }
+  
+  .container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  background-color: rgb(168, 168, 235);
+  padding: 10px;
+  max-width: 1000px;
+  margin: 0 auto;
+  }
+
+  .column-line {
+  display: flex;
+  flex: auto;
+  flex-direction: column;
+  background-color: #dee2e5;
+  padding: 3px;
+  border-radius: 2px;
+  margin-left: 10px;
+  min-width: 300px;
+  }
+  
+  .column-line:first-child {
+  margin-left: 0;
+  }
+  
+  .column-line_item {
+  background-color: rgb(255, 255, 255);
+  border-radius: 2px;
+  margin-top: 10px;
+  position: relative;
+  padding-top: 5px;
+  }
+  
+  .column-line_item:hover {
+  cursor: grab;
+  }
+  
+  .column-line_item__cross-close {
+  position: absolute;
+  z-index: 1;
+  left: 90%;
+  top: 2px;
+  height: 20px;
+  width: 20px;
+  opacity: 0;
+  }
+  
+  .column-line_item_content {
+  resize: vertical;
+  text-align: start;
+  font-size: 15px;
+  border: none;
+  width: 95%;
+  background-color: #f3f3ff;
+  }
+  
+  .column-line_item__cross-close:hover,
+  .column-line_item:hover .column-line_item__cross-close,
+  .dragget {
+  opacity: 1;
+  cursor: pointer;
+  }
+  
+  .button_add {
+    margin-right: auto;
+    margin-top: 20px;
+    background: none;
+    border: none;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  .button_add:hover {
+    text-decoration: none;
+  }
